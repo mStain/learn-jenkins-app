@@ -36,4 +36,9 @@ pipeline {
             }
         }
     }
+    post{
+        always{
+        junit '/workspaces/learn-jenkins-app/test-results/junit.xml'
+        }
+    }
 }
